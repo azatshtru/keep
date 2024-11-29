@@ -1,0 +1,1 @@
+- tags for specific lines and tags for the entire note should be two different things in ryth
