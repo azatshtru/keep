@@ -13,9 +13,15 @@ The above query will be stored as plaintext, but during parsing, it will query t
 A query can be used to manage and find the notes inside root node or other branches all in one place in different views.   
 Query results are sorted in order of the supplied tags.   
 Queries can be tabulated with tags as columns by enclosing tags in parentheses.   
-   
 ### Possible ideas to handle orphaned notes with no links.   
-Try to think about a way to handle a situation that if the note link is removed, how will the user access the orphaned note. Possible ideas are that all notes are shown in some kind of graph or some list somewhere in ryth.   
+Try to think about a way to handle a situation that if the note link is removed, how will the user access the orphaned note. Possible ideas are that all notes are shown in some kind of graph or some list somewhere in ryth.
 
-Move the note to some kind of archive, from there, the note is moved out automatically if it's NoteID referenced somewhere in the base notes in the space.   
+Move the note to some kind of archive, from there, the note is moved out automatically if it's NoteID referenced somewhere in the base notes in the space.
+
+### tag scope
+There can be three types of tags:
+1. inline tags `@key::value`
+2. doctags `@!key::value`
+tags for specific lines and tags for the entire note should be two different things in ryth, and can be referenced as required.
+
 #ryth #fleeting-ideas
