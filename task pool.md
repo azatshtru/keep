@@ -8,12 +8,13 @@ Design Patterns
    
 tech interview handbook   
 postgres/dbms   
-Unit Testing   
+Unit Testing, Integration testing, Mock objects
 CLRS / algorepo   
    
 Learn investing   
 IITG   
-   
+
+vim marks
 devcontainers   
 Curve smoothing, Line stabilizing algorithms   
 Debugger (gdb)   

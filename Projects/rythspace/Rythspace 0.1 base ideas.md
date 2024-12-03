@@ -24,4 +24,11 @@ There can be three types of tags:
 2. doctags `@!key::value`
 tags for specific lines and tags for the entire note should be two different things in ryth, and can be referenced as required.
 
+## hyperlinks to common stuff
+People will create tasks throughout their notes in ryth.
+- when visiting ryth.space/todo, all tasks from all the projects will be shown
+- when visiting ryth.space/todo/today, all tasks for today will be shown
+- when visiting ryth.space/todo/tomorrow, all tasks for tomorrow will be shown
+these are for tasks, other hyperlinks can be created for other stuff
+
 #ryth #fleeting-ideas
