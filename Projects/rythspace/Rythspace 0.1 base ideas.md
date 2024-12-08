@@ -29,6 +29,7 @@ People will create tasks throughout their notes in ryth.
 - when visiting ryth.space/todo, all tasks from all the projects will be shown
 - when visiting ryth.space/todo/today, all tasks for today will be shown
 - when visiting ryth.space/todo/tomorrow, all tasks for tomorrow will be shown
+- flashcards can be created between notes in ryth and ryth.space/flashcards will show the flashcards, maybe some filters can also be specified
 these are for tasks, other hyperlinks can be created for other stuff
 
 #ryth #fleeting-ideas
