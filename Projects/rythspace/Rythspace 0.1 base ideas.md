@@ -1,3 +1,6 @@
+## Design
+- ryth will use FiraCode nerd font
+
 # Rythspace 0.1 base ideas
 ### Notes and links   
 There are spaces, each space has a root note.   
