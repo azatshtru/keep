@@ -1,0 +1,4 @@
+- [ ] study about line simplification and stabilizing algorithm, there was a question about techniques in your ChatGPT. Make a note of that.
+- [ ] implement drawing editor
+- [ ] find a database and apply somewhere to get funding to host it.
+- [ ] create tile UI

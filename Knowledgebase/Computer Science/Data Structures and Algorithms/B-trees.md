@@ -29,7 +29,7 @@ Still, parent nodes can be full as well, therefore to avoid recursively splittin
 ### Steps for Deletion:
 1. **Find the Key**:
     - Traverse the B-tree to locate the key to delete.
-2. **Delete Based on Location**:
+2. **Delete Based on internal or leaf node**:
     - If the key is in a **leaf node**, simply remove it.
     - If the key is in an **internal node**, replace it with its in-order predecessor or successor.
 3. **Handle Underflows**:

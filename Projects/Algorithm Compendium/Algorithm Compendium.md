@@ -34,3 +34,20 @@
 28. [ ] Strings and string algorithms
 29. [ ] Matrices and matrix operations
 30. [ ] Segment Trees
+# Algorithm Applicatives
+31. [ ] Algorithms related to number theory and combinatorics
+32. [ ] Linear programming algorithms
+33. [ ] Game theory
+34. [ ] Geometry
+35. [ ] Machine learning algorithms
+# Algorithm Theoretics
+35. [ ] Online vs offline algorithms
+36. [ ] Sweep line algorithms
+37. [ ] Randomized Algorithms and Probabilistic analysis
+38. [ ] Fast Fourier Transform (FFT)
+39. [ ] sqrt(n) algorithms
+40. [ ] P, NP, NP-hard
+41. [ ] PSPACE
+42. [ ] Approximation algorithms
+43. [ ] Local Search
+44. [ ] Parallel computation and parallel algorithms
