@@ -39,3 +39,22 @@ $$\frac{\text{ending period value}}{\text{starting period value - 1}}* 100$$
 ## compound annual growth rate (CAGR)
 this factors in the time component while measuring returns
 $$\text{CAGR} = \frac{\text{ending value}}{\text{beginning value}}^{(1/\text{number of years})}-1$$
+# free-float market cap
+free-float market cap is calculated by multiplying the number of outstanding shares of a company by the value of a single share. For example, if company A has 100 outstanding shares of 50 each, then the free-float market cap is 5000.
+
+free-float market cap is used to measure the percentage of effect of the stock on the market.
+# Stock Market Indices
+To measure the performance of the market as a whole, instead of looking at all of the listed stocks individually, we measure the performance of some selected stocks that have the most impact on the market.
+
+In India there are two indices: **S&P BSE** and **Nifty 50**, both are collections of companies who have the most impact in terms of free-float market cap. These indices are prepared by BSE and NSE respectively.
+
+sector specific indices also exist, for example **Bank Nifty** is a collection of most influential company in the banking sector and **CNX IT** represents the performance of the IT sector.
+## Using the stock market indices
+### Information
+Index reflects the overall trend of the market.
+### Benchmarking
+To compare one's own performance against the index. For example, if you made 20% percent profit, but Nifty 50 moved 30% up, then you have underperformed the market. The goal, obviously, is to outperform the market.
+### Trading
+Trading on the index means taking the broader call on the economy as a whole. Purchasing shares of an index directly invests in all of the major listed companies in it. If the government takes some good decision during the annual budget in the country, then the economy is expected to rise as a whole and it can be a good idea to purchase the shares of an index like Nifty 50.
+## Portfolio Hedging
+Investors usually have a portfolio (a collection) of stocks that they invest in for the long term. Investors can analyze the trends in the index to foresee an adverse movement in the market and **hedge** (take another position to offset the losses) their portfolio accordingly.
