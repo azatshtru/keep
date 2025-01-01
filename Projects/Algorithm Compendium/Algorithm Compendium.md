@@ -29,11 +29,13 @@
 # Data Structure Theoretics
 24. [ ] Augmenting Data structures
 25. [ ] Red Black Trees
-26. [ ] Fibonacci Heaps
+26. [x] Fibonacci Heaps
 27. [ ] B-trees
 28. [ ] Strings and string algorithms
 29. [ ] Matrices and matrix operations
 30. [ ] Segment Trees
+31. [ ] k-d trees
+32. [ ] AVL Trees
 # Algorithm Applicatives
 31. [ ] Algorithms related to number theory and combinatorics
 32. [ ] Linear programming algorithms
