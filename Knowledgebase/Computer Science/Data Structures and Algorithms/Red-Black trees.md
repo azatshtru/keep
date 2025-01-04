@@ -144,10 +144,13 @@ Right Triangle Arrangement, A needs to be right rotated (opposite direction of Z
 ```
 # Deletion in Red Black trees
 Deletion in Red Black trees happens in two steps:
-1. Do a regular binary tree deletion, i.e. replace the node to be deleted with its in-order successor.
-2. Call a fixup method to fix any violations of Red-Black tree properties that were made during the deletion.
+1. Do a regular binary tree deletion, i.e. replace the to-be-deleted-node with its in-order successor if it has two children, otherwise if one of its children is a nil node, then simply delete the to-be-deleted-node.
+2. change the in-order successor's color to the deleted node's original color.
+3. Call a fixup method to fix any violations of Red-Black tree properties that were made during the deletion.
 ## Delete fixups
-If the original-color of the deleted node was red, then there is no fixup required, as the black-height of the tree remains same. However, if the original color of the deleted node was black, then we do **sibling analysis** to perform fixups.
+let original-color be the color of deleted node if one of children were nil nodes, otherwise let original-color be the color of the node that replaced the to-be-deleted node.
+
+If the original-color is red, then there is no fixup required, as the black-height of the tree remains same. However, if the original color of the deleted node was black, then we do **sibling analysis** to perform fixups.
 
 There are four possible states of the sibling node of the deleted node after the deletion, and there are four corresponding fixes for each of them. These fixes are called according to the condition repeatedly in a loop until Red-Black tree properties are satisfied. More than one fix can happen during one invocation.
 
