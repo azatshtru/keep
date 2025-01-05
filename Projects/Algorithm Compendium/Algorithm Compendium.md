@@ -6,8 +6,8 @@
 3. [x] Sorting
 4. [x] Binary Search and Medians
 5. [x] Linked Lists and external chaining
-6. [ ] Queues and Priority Queues
-7. [ ] Hashing, Open addressing and Hashmaps
+6. [x] Queues and Priority Queues
+7. [x] Hashing, Open addressing and Hashmaps
 8. [ ] Disjoint sets and Hashsets
 # Algorithmic Techniques
 9. [ ] Complete search: subsets, permutations, Backtracking, search pruning and meet in the middle
