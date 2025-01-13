@@ -8,7 +8,8 @@
 5. [x] Linked Lists and external chaining
 6. [x] Queues and Priority Queues
 7. [x] Hashing, Open addressing and Hashmaps
-8. [ ] Disjoint sets and Hashsets
+8. [x] Disjoint sets and Hashsets
+9. [ ] BigInt
 # Algorithmic Techniques
 9. [ ] Complete search: subsets, permutations, Backtracking, search pruning and meet in the middle
 10. [ ] Greedy Algorithms
