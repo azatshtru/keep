@@ -4,3 +4,5 @@
 
 #community hsr hackerhouse
 #community Bangalore Chess Club on top of mixnosh
+
+#startup App for Local Journalism

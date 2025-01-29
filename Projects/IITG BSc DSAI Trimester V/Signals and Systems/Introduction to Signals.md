@@ -29,7 +29,7 @@ Analog signals are CTCV signals
 Digital signals are DTDV signals specifically from the codomain set of ${0, 1}$, i.e. the binary set.
 
 > [!INFO] Complex signals
-> Complex signals can be defined as $x(t) = x_R(t)+jx_I(t)$ where $j=\sqrt{-1}$ and $x_R$ and $x_I$ are the real and imaginary component of the signal.
+> Complex signals can be defined as $x(t) = x_R(t)+jx_I(t)$ where $j=\sqrt{-1}$ and $x_R$ and $x_I$ are the real and imaginary components of the signal.
 # Energy and Power
 Energy between a time interval T can be calculated as follows:
 
@@ -47,7 +47,7 @@ Average Power is calculated by dividing the total energy by the total time.
 **Continuous case**
 $$P = \lim_{T\to\infty}\frac1T\int_{-T/2}^{T/2}|x(t)|^2dt$$
 **Discrete case**
-$$E = \lim_{N\to\infty}\frac1{2N+1}\sum_{n=-N}^{N}|x[n]|^2$$
+$$P = \lim_{N\to\infty}\frac1{2N+1}\sum_{n=-N}^{N}|x[n]|^2$$
 > There can be cases where there is finite energy, in which case they are called **energy signals**, or infinite energy with finite average power, in which case they are called **power signals**.
 # Periodicity
 > [!INFO] shifting and scaling
@@ -78,7 +78,7 @@ $$x(-t) = x(t)$$
 $$x[-n] = x[n]$$
 A time reversed signal can be added to its original signal to get an even signal.
 
-$$x_o(t) = \frac{x(t)+x(-t)}{2}$$
+$$x_e(t) = \frac{x(t)+x(-t)}{2}$$
 ## every signal can be expressed as a sum of odd and even signals
 From the above equations, it can be shown that:
 $$x_o(t) + x_e(t) = x(t)$$

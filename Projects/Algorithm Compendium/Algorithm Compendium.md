@@ -1,6 +1,7 @@
 # Introduction to Design and Analysis of Algorithms
 0. [ ] Time complexity and Asymptotic analysis and notation
 1. [ ] Recursion and Divide and Conquer
+2. [ ] Kadane's algorithm
 # Primary Data Structures, Order statistics, common hermenuetics
 2. [x] Arrays / vectors
 3. [x] Sorting
@@ -12,7 +13,7 @@
 9. [ ] BigInt
 # Algorithmic Techniques
 9. [ ] Complete search: subsets, permutations, Backtracking, search pruning and meet in the middle
-10. [ ] Greedy Algorithms
+10. [x] Greedy Algorithms
 11. [ ] Dynamic Programming
 12. [ ] Amortized analysis
 13. [ ] Query techniques
@@ -29,9 +30,9 @@
 23. [ ] Network flow
 # Data Structure Theoretics
 24. [ ] Augmenting Data structures
-25. [ ] Red Black Trees
+25. [x] Red Black Trees
 26. [x] Fibonacci Heaps
-27. [ ] B-trees
+27. [x] B-trees
 28. [ ] Strings and string algorithms
 29. [ ] Matrices and matrix operations
 30. [ ] Segment Trees

@@ -14,7 +14,7 @@
 ## degrees of B-tree nodes
 The nodes must have a degree $t \geq 2$.
 ### lower and upper bound on number of keys for B-tree nodes
-For internal nodes, there must be more than t-1 keys t children, and less than 2t-1 keys and 2t children.
+For internal nodes, there must be more than t-1 keys and t children, and less than 2t-1 keys and 2t children.
 ## height of a B-tree
 height of a B-tree is generally proportional to the number of disk operations required, and is generally $h \leq \log_t{(n+1)/2}$
 
