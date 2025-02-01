@@ -19,7 +19,7 @@ Plan the key goals and prepare a table for tracking key results for each day of 
 | Episodes of From Watched                  | ...                              | ...  | ...    | ...                                                                 | ...                           | ...                                                                                |
 | ...                                       | ...                              | ...  | ...    | ...                                                                 | ...                           | ...                                                                                |
 ### Few tips on designing and executing these tables
-1. Make sure to not have more than 3 major goals per day when designing the weekly schedule.
+1. Make sure to not have more than 2 major goals per day when designing the weekly schedule.
 2. During each weekly review, make a spreadsheet and track how much of these tasks were you able to finish satisfactorily during the week, what were the roadblocks, what were the Acuties (things you did right), and what are the actions you can take next week to be more productive next week.
 3. Never spend more than 3-*ish* hours on a single task.
 4. Do not spend more than 1 hour on the weekly review and schedule weekly review on the same time on the same day of the week.
