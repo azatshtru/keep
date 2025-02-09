@@ -47,10 +47,10 @@ We know that $\hat u\_i=y\_i-\hat y\_i$, hence:
 
 $$
 \sum \hat  u_i = \sum (y_i-\hat y_i)
-\\\text{substituting } \hat y_i \text{ with } \hat\beta_0+\hat\beta_1\bar x
-\\\sum (y_i-\hat\beta_0-\hat\beta_1\bar x)
-\\\text{futher subsitituting }\hat\beta_0 \text{ with } \bar y-\hat\beta_1\bar x
-\\\sum (y_i-\bar y+\hat\beta_1\bar x-\hat\beta_1\bar x)
+\\ \text{ substituting } \hat y_i \text{ with } \hat\beta_0+\hat\beta_1\bar x
+\\ \sum (y_i-\hat\beta_0-\hat\beta_1\bar x)
+\\ \text{ futher subsitituting }\hat\beta_0 \text{ with } \bar y-\hat\beta_1\bar x
+\\ \sum (y_i-\bar y+\hat\beta_1\bar x-\hat\beta_1\bar x)
 \\= \sum (y_i-\bar y) = n\bar y-n\bar y= 0
 $$
 The above analysis indicates that, like the mean of errors in the population is zero, the mean of all estimated (predicted) errors in the sample, i.e. $\hat u\_i$ is also zero:   
@@ -58,7 +58,7 @@ The above analysis indicates that, like the mean of errors in the population is 
 $$
 \bar {\hat u_i} = 0
 $$
- and since $\hat u\_i=y\_i-\hat y\_i$, we can say:   
+ and since $\hat u_i=y_i-\hat y_i$, we can say:   
 
 $$
 \bar y_i-\bar{\hat y_i} = 0
@@ -173,7 +173,7 @@ R^2 = r^2_{y,\hat y}
 $$
 In most natural sciences, one looks for a very high $R^2$, above 0.8, but in social sciences, due to data being more random, the value can drop down to 0.3 or 0.4, however a value this lower for social sciences does not necessarily mean that the regression model is useless.   
 ## Assumptions, Assumptions and Assumptions for simple linear regression model   
-### The dependent variable y, the independent variable x and the error term u are linearly related by the equation $y\_i=\beta\_0+\beta\_1x\_i+u\_i$ for the population   
+### The dependent variable y, the independent variable x and the error term u are linearly related by the equation $y_i=\beta_0+\beta_1x_i+u_i$ for the population   
 ### For a sample, a $\hat y\_i$ is estimated, $\hat y\_i=\hat\beta\_0+\hat\beta\_1x\_i$, where $\hat\beta\_i$ are the estimated regression parameters different from $\beta\_i$   
 The difference between the estimated y and observed y is called the estimated error, the estimated error $\hat u\_i$ is different from observed error $u\_i$ as observed error is obtained from socioeconomic randomness, while the estimated error is the result of differences of y between estimated linear regression line and the population regression line.   
 ### The sample points have different values: Cov(x, y) is never zero and Var(x) is never zero, otherwise the sample $\beta\_1$ would be undefined.   

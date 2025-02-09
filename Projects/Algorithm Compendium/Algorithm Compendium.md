@@ -14,10 +14,10 @@
 # Algorithmic Techniques
 9. [ ] Complete search: subsets, permutations, Backtracking, search pruning and meet in the middle
 10. [x] Greedy Algorithms
-11. [ ] Dynamic Programming
-12. [ ] Amortized analysis
+11. [x] Dynamic Programming
+12. [x] Amortized analysis
 13. [ ] Query techniques
-14. [ ] Bit manipulation
+14. [x] Bit manipulation
 # Graphs
 15. [ ] Graph representations
 16. [ ] Graph traversal

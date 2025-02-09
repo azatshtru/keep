@@ -12,3 +12,5 @@ Read long books, not in one pass, but multiple passes, each time learning more o
 Learn everything by recalling multiple times over a period of time. every two 2 days, then every 4 days, then 8 days, 16 days, 32 days, 64 days and by the 128th day, i.e. the 7th recall, you will remember it completely.
 
 7 recalls, 7 repetitions, be one with mastery
+
+> Instead of perfection, achieve consistency
