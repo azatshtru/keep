@@ -35,4 +35,9 @@ People will create tasks throughout their notes in ryth.
 - flashcards can be created between notes in ryth and ryth.space/flashcards will show the flashcards, maybe some filters can also be specified
 these are for tasks, other hyperlinks can be created for other stuff
 
+### Living, breathing documents
+properties like recall_date and due_date will be rendered as editable elements like checkboxes and progress bars, so that the recall_date can be edited easily once the user has done the revision of the note, the user can set the note to a future date to practice repeated recall and flashcards, etc. (rymember)
+
+many other properties should be editable outside the document making them living and breathing.
+
 #ryth #fleeting-ideas
