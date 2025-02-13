@@ -148,8 +148,8 @@ o
    /
   o
    \
-	o 
-	
+    o 
+
 o
  \
   o
@@ -160,7 +160,7 @@ o
  \
   o
    \
-	o 
+    o 
 
 ```
 and the rooted binary trees are
@@ -187,8 +187,8 @@ o
   o
  / \
 o   o
-	|
-	o
+    |
+    o
 
   o
   |
