@@ -228,4 +228,164 @@ $$!n=n!⋅(1−1/1!​+1/2!​−1/3!​+⋯+(−1)^n/n!​)$$
 After removing element 1, there are n-1 ways to choose another element x that is kept at the position of element 1 in the derangement. Two things can happen:
 1. The other chosen element x is also placed at element 1's position, in which case both element 1 and element x are deranged, therefore we now need to find derangements for the remaining n-2 elements.
 2. No other element is placed at element x's position, in this case we need to find derangements of remaining n - 1 elements such that no element is placed on the current position of element 1.
+
 $$f(n) = \begin{cases}0 & n = 1\\1 & n = 2\\(n-1)(f(n-2)+f(n-1)) & n > 2\end{cases}$$
+# Burnside's Lemma
+> and some necklaces with beads and colors
+
+If there is a subset of combinations such that each combination in the subset can be obtained by manipulating any other combination from the same subset according to some given set of manipulations, then the combinations in the subset are said to be **symmetric** to each other.
+
+For example, if there is a necklace with n beads, the beads can have any color from a set of some m colors..
+```
+This is a necklace with 4 beads, and 3 possible colors: r, g, b, i.e. n=4 and m=3, then one of the combinations is..
+  r
+ / \
+g   b
+ \ /
+  r
+other combinations with r, g, b and 4 beads are..
+  g
+ / \
+r   r
+ \ /
+  b
+  r
+ / \
+b   r
+ \ /
+  r
+  b
+ / \
+r   r
+ \ /
+  g
+```
+Each of the four necklaces given above can be obtained by rotating any of the other necklace from above clockwise a few times.
+If we define a set of manipulations with 4 ways to manipulate:
+1. rotate clockwise once
+2. rotate clockwise twice
+3. rotate clockwise thrice
+4. rotate clockwise four-times
+
+according to these manipulations, the four necklaces above are symmetric to each other because each of them can be obtained from the any other using any one of the manipulations given above.
+
+Burnside's Lemma is used to count the number of combinations such that only one combination is counted for a subset of symmetric combinations.
+$$\sum_{k=1}^n\frac{c(k)}{n}$$
+$n$ is the number of ways to manipulate the combination according to the given rule. 
+- For example, a necklace can be rotated n=4 times before it reaches its original position, therefore there are n=4 ways to manipulate the combination: rotating it once, rotating it twice, thrice and four times.
+
+c(k) is the number of possible combinations that remain unchanged when the kth manipulation according to the rule is applied.
+- For example, if we take the 2nd way of manipulation in the necklace, i.e. rotating it twice, then the number of possible combinations of the necklace that would remain unchanged after rotating it twice would be $3^2$ (explained next)
+
+With 3 colors and 4 beads, there are total $3^4$ possible necklaces because there are 4 beads and 3 possible colors for each bead. For n beads and m colors, there are $m^n$ possible necklaces.
+
+If we use the second way of manipulation, i.e. rotating the necklace twice, then there would be a subset of necklaces from the total possible necklaces that would remain unchanged. How many necklaces with 4 beads and 3 possible colors are there that will remain unchanged upon rotating it twice?
+
+`_ _ _ _`
+There are 3 choices of colors for the first bead of such a necklace. After rotating twice, the 3rd bead of the necklace would be at the first bead's position, therefore the 3rd bead should have the same color as the first bead, hence we only have one choice for the third bead because we fix it according to the first bead..
+`3 _ 1 _`
+For the second bead, we have 3 choices of colors, but this would fix the fourth bead using the same logice as before, we have..
+`3 3 1 1`
+
+$3\times3\times1\times1=3^2=9$
+
+Therefore there are $3^2$ necklaces that would remain unchanged when rotating twice clockwise given 3 colors and 4 beads.
+
+In fact, once we fix some beads, the choices for colors of other beads are automatically fixed according to the number of clockwise rotations.
+
+When we fix a bead for some number of rotations k, the bead that is k positions before the current bead replaces the current bead after rotation, and the current bead replaces the bead that is is k positions after it.
+
+Riding on this chain of thought, we can derive that if we fix initial $\gcd(k, n)$ adjacent beads, then remaining beads will be fixed according to these initial beads, and we will have $\frac{n}{\gcd(k, n)}$ groups of adjacent beads and these groups will replace each other without conflicts when rotation is performed k times.
+
+Since we have $m$ choices for for $\gcd(k, n)$ beads and the remaining will be fixed according to them, in total we can construct $m^{\gcd(k, n)}$ necklaces that would remain unchanged after rotating the necklace k times.
+
+Or in the language of Burnside's lemma, there would be $c(k) = m^{\gcd(k, n)}$ possible necklaces that would remain unchanged when we apply the kth manipulation on them.
+
+To only represent one element from the set of symmetric necklaces, we will divide by n and add the elements for each k.
+$$\sum_{k=0}^{n-1}\frac{m^{\gcd(k, n)}}{n}$$
+# Cayley's formula
+There are $n^{n-2}$ labeled trees that contain n nodes.
+Two labelled trees are different if their structure is different or labelling is different.
+For example, there are $4^{4-2}=16$ labelled trees for $n=4$
+```
+  1
+ /|\
+2 3 4
+
+  2
+ /|\
+1 3 4
+
+  3
+ /|\
+1 2 4
+
+  4
+ /|\
+1 2 3
+
+1-2-3-4
+
+1-2-4-3
+
+1-3-2-4
+
+1-3-4-2
+
+1-4-2-3
+
+1-4-3-2
+
+2-1-3-4
+
+2-1-4-3
+
+2-3-1-4
+
+2-4-1-3
+
+3-1-2-4
+
+3-2-1-4
+```
+## Prüfer code
+The Prüfer code for a tree is constructed by following a process that removes n−2 leaves from the tree.
+At each step, the leaf with the smallest label is removed, and the label of its only neighbor is added to the code.
+```
+For example,
+1 2-5
+ \|
+3-4
+
+This tree can also be represented as:
+     2
+    / \
+   4   5
+  / \
+ 1   3
+```
+Leaf with smallest key is 1, so it is removed and its only neighbor, 4 is added to the code, the code becomes `[4]`, the tree becomes..
+```
+     2
+    / \
+   4   5
+    \
+     3
+```
+The next leaf with the smallest key is 3, it is removed from the tree, and its neighbor, 4 is added to the code. The code becomes `[4, 4]` and the tree becomes..
+```
+     2
+    / \
+   4   5
+```
+The next leaf with smallest key is 4, it is removed and the neighbor, 2 is added to the code, the code becomes: `[4, 4, 2]`, and the tree..
+```
+    2
+     \
+      5
+```
+We have removed n-2 nodes from the tree, therefore we stop here.
+
+Importantly, the original tree can be constructed uniquely from a Prüfer code.
+
+A Prüfer code looks like this `[_, _, _, _, ...]` There are n-2 elements in a Prüfer code. For each of the n-2 positions, there can be any number from 1 to n, i.e. there can be total $n^{n-2}$ unique Prüfer codes of length n-2. Since each labelled tree generates a unique Prüfer code, each Prüfer code corresponds to a unique labelled tree. Hence, there are $n^{n-2}$ unique labelled trees, each corresponding to a unique Prüfer code.
