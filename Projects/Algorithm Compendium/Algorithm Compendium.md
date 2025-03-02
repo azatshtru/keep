@@ -2,21 +2,21 @@
 0. [ ] Time complexity and Asymptotic analysis and notation
 1. [ ] Recursion and Divide and Conquer
 2. [ ] Kadane's algorithm
-# Primary Data Structures, Order statistics, common hermenuetics
-2. [x] Arrays / vectors
-3. [x] Sorting
-4. [x] Binary Search and Medians
-5. [x] Linked Lists and external chaining
-6. [x] Queues and Priority Queues
-7. [x] Hashing, Open addressing and Hashmaps
-8. [x] Disjoint sets and Hashsets
-9. [ ] BigInt
+# Primary Data Structures, Sorting, Order statistics and Binary Search
+1. [x] Arrays / vectors
+2. [x] Sorting
+3. [x] Binary Search and Medians
+4. [x] Linked Lists and external chaining
+5. [x] Queues and Priority Queues
+6. [x] Hashing, Open addressing and Hashmaps
+7. [x] Disjoint sets and Hashsets
+8. [ ] BigInt
 # Algorithmic Techniques
 9. [ ] Complete search: subsets, permutations, Backtracking, search pruning and meet in the middle
 10. [x] Greedy Algorithms
 11. [x] Dynamic Programming
 12. [x] Amortized analysis
-13. [ ] Query techniques
+13. [x] Query techniques
 14. [x] Bit manipulation
 # Graphs
 15. [ ] Graph representations
@@ -39,9 +39,9 @@
 31. [ ] k-d trees
 32. [ ] AVL Trees
 # Algorithm Applicatives
-31. [ ] Algorithms related to number theory and combinatorics
+31. [x] Algorithms related to number theory and combinatorics
 32. [ ] Linear programming algorithms
-33. [ ] Game theory
+33. [x] Game theory
 34. [ ] Geometry
 35. [ ] Machine learning algorithms
 # Algorithm Theoretics

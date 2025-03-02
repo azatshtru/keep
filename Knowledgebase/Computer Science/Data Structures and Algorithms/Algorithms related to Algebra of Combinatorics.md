@@ -19,6 +19,7 @@ Therefore, to make n, we need to find all the ways to make k and n-k for all k <
 
 This can be modelled as a recurrent relation..
 $$f(n) = \begin{cases} 1 & n = 0\\\sum_{x=0}^{n-1}f(x) & n > 0 \end{cases}$$
+
 With enough algebraic manipulation and noticing patterns among the recurrent relation's value/output, we can find a _closed-form formula_ for the recurrent relation.
 
 For the above example with n = 4, the values of the recurrent function are..
