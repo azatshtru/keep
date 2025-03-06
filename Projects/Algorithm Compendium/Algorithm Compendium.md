@@ -19,15 +19,15 @@
 13. [x] Query techniques
 14. [x] Bit manipulation
 # Graphs
-15. [ ] Graph representations
-16. [ ] Graph traversal
-17. [ ] Shortest Path
-18. [ ] Minimum spanning trees
-19. [ ] Directed graphs
-20. [ ] Strong connectivity
-21. [ ] Tree algorithms and tree queries
-22. [ ] Eulerian and Hamiltonian Paths
-23. [ ] Network flow
+15. [x] Graph representations
+16. [x] Graph traversal
+17. [x] Shortest Path
+18. [x] Minimum spanning trees
+19. [x] Directed graphs
+20. [x] Strong connectivity
+21. [x] Tree algorithms and tree queries
+22. [x] Eulerian and Hamiltonian Paths
+23. [x] Network flow
 # Data Structure Theoretics
 24. [ ] Augmenting Data structures
 25. [x] Red Black Trees
@@ -35,7 +35,7 @@
 27. [x] B-trees
 28. [ ] Strings and string algorithms
 29. [ ] Matrices and matrix operations
-30. [ ] Segment Trees
+30. [x] Segment Trees
 31. [ ] k-d trees
 32. [ ] AVL Trees
 # Algorithm Applicatives
