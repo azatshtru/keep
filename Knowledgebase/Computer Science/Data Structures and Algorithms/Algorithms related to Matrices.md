@@ -18,6 +18,9 @@ The $(i, j)^{th}$ element of the product matrix is calculated as:
 $$AB[i, j] = \sum_{k=1}^n A[i, k]\cdot B[k, j]$$
 1. Matrix multiplication is not commutative.
 2. Matrix multiplication is associative.
+
+The algorithm to compute the product takes $O(n^3)$ time.
+To compute the product of chains of matrices, an efficient algorithm can be formed using dynamic programming as mentioned in [[Matrix Chain Multiplication and the elements of Dynamic Programming]].
 ## Min-plus matrix multiplication
 Min-plus product is another way to multiply two matrices.
 The $(i, j)^{th}$ element of the Min-plus product of two matrices $A$ and $B$ is calculated as
@@ -25,9 +28,6 @@ $$AB[i,j] = \min_{k=1}^n\{A[i,k]+B[i,k]\}$$
 ## Identity matrix
 The elements on the principal diagonal of an identity matrix are all 1 and the remaining elements are zero.
 Any matrix remains unchanged when multiplied with the identity matrix.
-
-The algorithm to compute the product takes $O(n^3)$ time.
-To compute the product of chains of matrices, an efficient algorithm can be formed using dynamic programming as mentioned in [[Matrix Chain Multiplication and the elements of Dynamic Programming]].
 # Matrix exponentiation
 An efficient algorithm can be used to compute powers of a matrix in $O(n^3logk)$ time using dynamic programming with the following recurrent relation:
 $$A^n=\begin{cases}I & n = 0\\A^{n/2}A^{n/2} & n\text{ is even}\\A^{n-1}A & n\text{ is odd}\end{cases}$$
