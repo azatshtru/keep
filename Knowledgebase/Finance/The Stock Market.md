@@ -58,3 +58,31 @@ To compare one's own performance against the index. For example, if you made 20%
 Trading on the index means taking the broader call on the economy as a whole. Purchasing shares of an index directly invests in all of the major listed companies in it. If the government takes some good decision during the annual budget in the country, then the economy is expected to rise as a whole and it can be a good idea to purchase the shares of an index like Nifty 50.
 ## Portfolio Hedging
 Investors usually have a portfolio (a collection) of stocks that they invest in for the long term. Investors can analyze the trends in the index to foresee an adverse movement in the market and **hedge** (take another position to offset the losses) their portfolio accordingly.
+# Commonly used stock market jargon
+## bulls vs bears
+- **Trend** - The term ‘trend’ usually refers to the general market direction and its associated momentum in the market.
+- **Bull Market (Bullish)** - If the stock market index is going up during a particular period, it is referred to as a bull market.
+- **Bear Market (Bearish)** - If the stock market index goes down during a particular period, it is referred to as a bear market.
+## highs and lows
+- **Face value of a stock** – The face value (FV) or par value indicates the nominal value of a share. The face value is important from a corporate action perspective. Usually, when dividends, stock splits, or bonuses are announced, they are issued keeping the face value in perspective.
+- **52 week high/low** - 52-week high/low is the highest/lowest price point at which a stock has traded during the last 52 weeks. A 52 week low indicates that the stock is bearish for the foreseeable future, and 52 week high indicates that stock is bullish for the foreseeable future.
+- **All time high/low** - The highest/lowest price the stock had ever traded from when it was listed.
+- **OHLC** - open is the price at which the stock opens for the day, high is the highest price at which the stock trade during the day, low is the lowest price at which the stock trades during the day, and close is the closing price of the stock.
+- **Volumes** - Volumes represent the total transactions (buy and sell put together) for a particular stock on a particular day.
+## market segments
+A market segment is a division within which a certain type of financial instrument is traded. Each financial instrument is characterized by its risk and reward parameters.
+1. Capital Market (CM) – Capital market segments offer tradable securities, such as stocks and exchange-traded funds (ETFs). So if you were to buy or sell shares of a company, you are essentially operating in the capital market segment. Shorting stocks, too, comes under the capital market segment. The cash market is sometimes referred to as the spot market.
+2. Futures and Options (FO) – Futures and Options, generally referred to as the equity derivative segment, are where leveraged products are traded.
+3. Currency Derivatives (CDS) – The CDS segment is where currency pairs like USD INR, EUR INR, JPY INR are traded. The trading is via futures and options; hence it’s called the currency derivative market.
+4. Wholesale Debt Market (WDM) – The wholesale debt market deals with fixed-income securities. Debt instruments include government securities, treasury bills, bonds issued by a public sector undertaking, corporate bonds, corporate debentures, etc.
+## longs and shorts and squaring offs
+You are **long** about a share price, when you expect it to go up. You hold a short position when you expect the share price to go down.
+
+Shares can be sold before they are bought. If you sell a share you do not own at a higher price, and then the value of the share goes down, then you can buy back the share at a lower price and make a profit. This is called **shorting** or a **short trade**.
+
+- **Squaring off** - Buying back from a short position is called squaring off the short position. Selling a share on which you hold the long position is called squaring off the long position.
+- **Intraday** - This is a trading position you initiate with an expectation to square off the position within the same day.
+
+Unless you're in a derivative market, you have to buy back the short before the market closes that day. In other words, shorts are traded intraday.
+
+
