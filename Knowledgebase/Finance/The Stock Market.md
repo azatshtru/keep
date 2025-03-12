@@ -84,5 +84,40 @@ Shares can be sold before they are bought. If you sell a share you do not own at
 - **Intraday** - This is a trading position you initiate with an expectation to square off the position within the same day.
 
 Unless you're in a derivative market, you have to buy back the short before the market closes that day. In other words, shorts are traded intraday.
+## trading terminal jargon
+When buying a stock, we have to specify some information other than how many shares we wish to purchase.
+### order types
+- **CNC** - Specify this if you wish to hold the shares for a long enough time.
+- **MIS** - Specify if you wish to trade intraday.
+- **limited price** - A limit indicates the price you are willing to buy the shares for, if you place an order with a limit, the trade will only get executed if someone is willing to sell you the shares for the limit price you specified, otherwise the trade will never get executed.
+- **market order** - If you don't specify a limit, then you are willing to buy the share for market available prices. This is called a market order.
+- **stop-loss** - To avoid against market crashes, a trigger price can be specified, which automatically sells the shares if the price falls below a certain specified threshold. This is called a stop loss order.
+### receipts and tracking 
+- **order book** - An order book lets you track orders that are both open and completed.
+- **trade book** - trade book tracks the receipt of the approved and completed orders, it allows us to track the stocks we have purchased.
+## bid and offer
+**offer price** - when you intend to buy a particular stock, you look at the offer prices of that stock. Offer prices list the available prices offered by the sellers that hold the shares and are willing to sell them.
 
+| Sl No | Offer Price | Offer Quantity | Number of Sellers |
+| ----- | ----------- | -------------- | ----------------- |
+| 01    | 3294.80     | 2              | 2                 |
+| 02    | 3294.85     | 4              | 2                 |
+| 03    | 3295.00     | 8              | 2                 |
+| 04    | 3296.20     | 25             | 1                 |
+| 05    | 3296.25     | 5              | 1                 |
+This table indicates that there are 2 shares available at 3294.80 and 4 shares available at 3294.85 and 8 shares available at 3295.00, practically this means that if you wish to purchase 7 shares, then you will pay $2\cdot 3294.80 + 4 \cdot 3294.85 + 1 \cdot 3295.00$
 
+Not all shares are sold to you at the same price, it depends on how many sellers are willing to sell at the prices.
+
+**bid price** - when you intend to sell a particular stock, you can look at the bid price table, which tells how many buyers are willing to purchase shares at given prices.
+
+|Sl No|Bid Price|Bid Quantity|Number of Buyers|
+|---|---|---|---|
+|01|3294.75|10|5|
+|02|3294.20|6|1|
+|03|3294.15|1|1|
+|04|3293.85|6|1|
+|05|3293.75|125|1|
+If you wish to sell 20 shares, you will have be able to sell 10 of them at 3294.75, 6 of them at 3294.20, 1 of them at 3294.15 and 3 of them at 3293.85.
+
+Not all shares can be sold by you at the same price, it depends on how many buyers are willing to buy at the prices.
