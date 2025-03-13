@@ -121,3 +121,23 @@ Not all shares are sold to you at the same price, it depends on how many sellers
 If you wish to sell 20 shares, you will have be able to sell 10 of them at 3294.75, 6 of them at 3294.20, 1 of them at 3294.15 and 3 of them at 3293.85.
 
 Not all shares can be sold by you at the same price, it depends on how many buyers are willing to buy at the prices.
+# Clearing and settlement process in Indian stock market
+When you buy shares, along with the share price there are a few other charges
+1. Brokerage
+2. Security Transaction charges (STT)
+3. Exchange transaction charges
+4. GST
+5. SEBI charges
+6. Stamp duty, which is 0.015% of the bought share volume, for example if you buy shares worth 100000, then the stamp duty would be 15
+
+The day you buy the shares is referred to as the **T-day**, after T-day, the funds in your trading account that were used to buy the shares are blocked and it takes some time for the purchase to be cleared, a lot of authorities are to be considered like SEBI, clearing corporation, depository, etc. which takes time. After clearance, the shares are credited to your DEMAT account and funds from your trading account are gone.
+
+Similarly for selling shares, the day you sell the shares is called the T-day, it takes some time to consider and get approval from all the market intermediaries, so the sell is cleared after some time from the T day and after all that process, the funds come into your trading account and the shares leave your DEMAT account and go to the depository.
+
+India is the first country to implement T+1 clearance process, which means that the buy and sell of stocks are cleared just one day after the purchase, previously it was T+2.
+## earmarking
+During the T+2 settlement days, when someone sold some shares, the shares were debited from the seller's account and were stored in the broker's pool account. Until the sell was approved from the clear corporation the shares would be in the broker's account. At the T+2 day, the shares would be transferred to the clearing corporation and the funds would be transferred to the seller's trading account.
+
+This means that the broker holds the shares for the entirety of T+1 without the seller getting any returns. During this intermediate period, the broker can misuse the shares. To reduce the risk of this, SEBI introduced earmarking.
+
+Instead of the shares leaving the seller's account, they would be earmarked for settlement. This removes the need for broker's pool account holding the shares for intermediate period. On the settlement day, the shares are debited from the seller's trading account and transferred to the clearing corporation.
