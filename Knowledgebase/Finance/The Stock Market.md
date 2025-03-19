@@ -141,3 +141,25 @@ During the T+2 settlement days, when someone sold some shares, the shares were d
 This means that the broker holds the shares for the entirety of T+1 without the seller getting any returns. During this intermediate period, the broker can misuse the shares. To reduce the risk of this, SEBI introduced earmarking.
 
 Instead of the shares leaving the seller's account, they would be earmarked for settlement. This removes the need for broker's pool account holding the shares for intermediate period. On the settlement day, the shares are debited from the seller's trading account and transferred to the clearing corporation.
+# Corporate actions and their impact on stock prices
+Corporate actions are financial initiatives undertaken by a company that results in a change to its stock price.
+## Dividends
+Dividends are portions of profits made by the company, which are distributed to the company’s shareholders. Dividends are paid to all the share holders on every share they own. If you own 100 shares of a company and the company decides to pay a dividend of 42, then you get 4200.
+
+Dividends are sometimes expressed as percentages of face values, for example if the face value of a stock was 5, and a dividend of 40 was paid, then the dividend is 800% of the face value and it will be announced like "company X is paying a dividend of 800%".
+
+When a company pays dividends, the money is gone from its balance sheets, and hence the valuation of the company reduces, this means that the stock prices of a company will drop by some amount. For example, if the company pays dividends of 15, then the share price will drop by 15. However, shareholders do not go into loss due to the price fall because they get the dividend money.
+
+It is not mandatory to pay dividends for a company. A company pays dividends usually when they have excess cash reserves. The company can choose to use the excess cash for their own development.
+### Timeline of dividends
+The company’s board members at the Annual General Meeting (AGM) decide whether to pay a dividend. The dividends are not paid right after the announcement.
+- **Dividend Declaration Date** - This is the date on which the AGM takes place, and the company’s board approves the dividend issue
+- **Record Date** - The date the company decides to review the shareholder’s register to list all eligible shareholders for the dividend. Usually, the time difference between the dividend declaration date and the record date is 30 days.
+- **Ex-Date/Ex-Dividend date** - With the T+1 settlement cycle, the ex-dividend date normally is on the same day as the record date. Only shareholders who own the shares before the ex-dividend date are entitled to receive the dividend.
+- **Dividend Payout Date** - The date on which the dividends are paid to shareholders listed in the company register.
+- **Cum Dividend** - The shares are said to be cum dividends till the ex-dividend date.
+- **Interim vs final dividends** - If the dividend is paid during the financial year, it is called the interim dividend. If the dividend is paid at the end of the financial year, it is called the final dividend.
+## Bonus Issue
+If the share price of a company becomes too bloated, and it becomes very hard for newer shareholders in the market to purchase its shares, then the company can choose to issue bonus shares to the share holder. These are issued over ratios 1:1, 2:1, 3:1, etc. These shares are awarded from company's reserves.
+
+For example, if someone owns 30 shares of a company where each share is worth 550 and the company allots a bonus issue with ratio 3:1, then the shareholder will get 3 additional shares for each share he owns, i.e. he will have 120 shares (four times what he originally had) after the issue, and the company will reduce the share price 4 times, i.e. instead of 550, the new share price will be 550/4 = 137.5
