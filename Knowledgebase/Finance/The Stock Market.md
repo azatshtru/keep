@@ -163,3 +163,20 @@ The company’s board members at the Annual General Meeting (AGM) decide whether
 If the share price of a company becomes too bloated, and it becomes very hard for newer shareholders in the market to purchase its shares, then the company can choose to issue bonus shares to the share holder. These are issued over ratios 1:1, 2:1, 3:1, etc. These shares are awarded from company's reserves.
 
 For example, if someone owns 30 shares of a company where each share is worth 550 and the company allots a bonus issue with ratio 3:1, then the shareholder will get 3 additional shares for each share he owns, i.e. he will have 120 shares (four times what he originally had) after the issue, and the company will reduce the share price 4 times, i.e. instead of 550, the new share price will be 550/4 = 137.5
+## Stock Split
+Similar to Bonus Issue, but instead of being awarded additional shares upon issue, your already existing shares are split based on some ratio. In Bonus Issue, the face value remains the same, but in stock split, the face value is reduced. For example if the face value of a company was 10, and they split the shares with ratio 1:2, then the new face value of the company would be 5.
+## Rights Issue
+Rights Issue is when a company offers new shares to the shareholders at a discount, it is essentially a second IPO. Unlike Bonus Issue, where additional shares are offered for free, in rights issue, the shareholders have to pay a discounted price.
+
+A 1:4 rights issue means that the company offers one additional share to the shareholder for every four shares he owns, at a discounted price.
+
+Shareholders should only participate in the rights issue if they are positive about the company's future, if the price of share falls below the discounted price after the rights issue, then it is more beneficial to buy the share from the open market instead of the right issue.
+## Buyback of shares
+A company can buy the shares back from the shareholders. This is done to reduce the outstanding share in the market. There are many reasons for why a company might buyback..
+1. Improve the profitability on a per-share basis
+2. To consolidate their stake in the company.
+3. To prevent other companies from taking over.
+4. To show the confidence of the promoters about their company.
+5. To support the share price from declining in the markets.
+
+When a company announces a buyback, it signals the company’s confidence in itself. Hence this is usually positive for the share price. An informed decision about investing in a buying back company can be made based on this and other factors.

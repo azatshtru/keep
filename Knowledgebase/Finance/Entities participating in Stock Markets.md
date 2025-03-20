@@ -30,5 +30,5 @@ The stock brokers can also work in the backend and open a DEMAT account on behal
 When the user purchases stock, he uses the trading account to transact and money is deducted from his trading account, but the certificate of transactions is kept in the DEMAT account. When he sells the shares, the money is transferred into his trading account and the certificates in DEMAT account are updated accordingly.
 ## Bank accounts
 Other than trading account and DEMAT account, the user also has a bank account which is managed by banks. The bank account is used to transfer money to and from the trading account, so that it can be used for trading.
-## Cleaning corporations
+## Clearing corporations
 Clearing corporations like ICCL have the work of ensuring that the funds that were sold by one user and purchased by some other user while trading in the Stock Exchange reach their respective places.
