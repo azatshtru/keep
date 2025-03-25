@@ -26,6 +26,6 @@ Beyond a certain size of the company, VCs don't invest and company will have to 
 - PEs have a very lower "risk appetite" than VCs or Angel investors. The only invest in businesses they deem profitable.
 
 Further **series** rounds of funding are provided to a business by PEs instead of VCs when the business grows to a sufficient size.
-# IPOs
+# [[IPOs]]
 The company offers its shares to the general public to gather capital for even further growth, the general public purchase the shares and get profits when the company gets profits.
 When the company offers its share for the first time to the general public, it is called an Initial Public Offering (IPO).

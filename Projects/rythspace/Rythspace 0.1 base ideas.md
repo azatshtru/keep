@@ -5,7 +5,7 @@
 ### Notes and links   
 There are spaces, each space has a root note.   
 Every note has a NoteID or hyperalias.   
-Every note can create a link to another note inside it by [[NoteID]] or ./NoteID.   
+Every note can create a link to another note inside it by `[[NoteID]]` or `./NoteID`.   
 If linked note doesn't exist, it will be created upon entering the linked note, this is (possibly) the standard way to create new notes.   
    
 ### Tags and queries   

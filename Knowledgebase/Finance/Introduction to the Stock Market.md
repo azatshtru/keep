@@ -1,3 +1,5 @@
+[[Origins of investments for a typical business]]
+[[Entities participating in Stock Markets]]
 # the Stock market is opinionated
 Two people can have different opinions on a decision made by a company. A change of CEO could mean "company will get a new direction" for some people, while the same news could mean "a change will bring instability" for other people.
 
@@ -180,3 +182,40 @@ A company can buy the shares back from the shareholders. This is done to reduce 
 5. To support the share price from declining in the markets.
 
 When a company announces a buyback, it signals the company’s confidence in itself. Hence this is usually positive for the share price. An informed decision about investing in a buying back company can be made based on this and other factors.
+# FPO
+Unlike an IPO, which is a company’s first share issuance, an FPO is when a company that is already listed on the stock exchange issues additional shares. Companies opt for FPOs to raise extra capital for growth, acquisitions, or debt repayment.  
+
+The process of an FPO is similar to that of an IPO, starting with the company filing a DRHP with SEBI. Once approved, a subscription period is opened where investors can bid for shares. The price of an FPO is influenced by the company’s current market valuation and demand from investors.
+
+FPOs can be classified into two types:  
+- **Dilutive FPO**: The company issues new shares, increasing the total number of shares available, which may dilute the value of existing shareholders' stakes.
+- **Non-Dilutive FPO**: In this type, existing shareholders, such as promoters, sell their shares, similar to an OFS, without issuing new ones.
+## OFS
+An OFS is a method through which existing shareholders, such as promoters, institutional investors, or large stakeholders, sell their shares to the public. Unlike an IPO or FPO, OFS does not involve issuing new shares or raising fresh capital for the company.
+
+The process of an OFS is much simpler and faster compared to IPOs and FPOs. The seller announces the number of shares they intend to sell, and investors can bid for these shares within a single trading day. The price of shares in an OFS is determined by market demand.  
+
+Since the company itself is not issuing new shares, the proceeds from an OFS go directly to the selling shareholders rather than benefiting the company’s growth. However, this method increases the stock's public float, making shares more accessible to investors.
+# Developing a Point of View
+[[Economic events and their impact on the market]]
+
+Developing a point of view refers to developing a systematic approach for having an opinion and sense of direction on a stock or index. It is done through a combination of three methods.
+1. Fundamental Analysis (FA)
+2. Technical Analysis (TA)
+3. Quantitative Analysis (QA)
+
+An example of a trader's thought process when developing a POV according to different approaches follows...
+- **FA-based POV** - The company’s quarterly numbers look impressive. The company has reported a 25% top-line and 15% bottom-line growth. The company’s guidance also looks positive. With all the fundamental factors aligned, the stock looks bullish; hence the stock is a buy.
+- **TA-based POV** - The MACD indicator has turned bullish along with a bullish engulfing candlestick pattern; the stock is also trading at its support point, with that study, its short-term sentiment looks positive; therefore, the stocks are a buy.
+- **QA-based POV** - With the recent up move, the stock’s price to earnings (PE) touched the 3rdstandard deviation. There is only a 1% chance for the PE to breach the 3rd standard deviation. Hence, it is prudent to expect a reversion to mean the stock is a sell.
+
+Once you develop a POV, you add other elements like risk management, timing, macro & micro factors, etc.
+
+If the POV is bullish, you can choose to do one of the following:
+
+1. Buy the stock in the spot market.
+2. Buy the stock in the derivatives markets.
+    1. Within derivatives, you can choose to buy the futures.
+    2. Or choose to trade via the options market.
+        1. Within the options market, there are call options and put options.
+        2. You can combine call and put options to create a synthetic bullish trade.

@@ -21,6 +21,8 @@ This involves buying the shares of publicly listed companies.
 Shares are traded on Bombay Stock Exchange (BSE) and National Stock Exchange (NSE).
 
 Compared to Fixed Income deposits, this method involves a bit risk, but it guarantees much higher returns than Fixed Income Instruments. Equities generate upwards of 12% - 20% CAGR.
+
+[[Introduction to the Stock Market]]
 ## Real Estate
 Buying and Selling land, vacant plots, apartments, commercial buildings, etc.
 There are two sources of income from this:
