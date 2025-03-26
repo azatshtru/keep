@@ -34,7 +34,7 @@ Older javascript had some features before the spec, for backward compatibility t
 There are 8 basic data types, can be checked using `typeof`.
 1. **Number** represents any number, Infinity and NaN. NaN operated with anything results in NaN except `NaN ** 0` which is 1. `1/0` is `Infinity`.
 2. **BigInt** type represents numbers bigger than $2^{53}$ and is created by appending `n` after the number.
-3. **Strings**, can be created using single/double quotes or backticks, use backticks for formatting.
+3. **Strings**, can be created using single/double quotes or backticks, use backticks for formatting. Only backticks can be used for multiline strings.
 4. **Boolean**
 5. **null** represents lack of value in memory.
 6. **undefined** represents unassigned variables, no variable should be explicitly assigned to undefined as per convention.

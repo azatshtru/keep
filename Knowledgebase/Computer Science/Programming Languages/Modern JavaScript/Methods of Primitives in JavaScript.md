@@ -17,3 +17,5 @@ Here’s what actually happens in `str.toUpperCase()`:
 3. The special object is destroyed, leaving the primitive `str` alone.
 
 null and undefined have no methods or object wrappers, hence they are "the most primitive"
+
+> Calling methods on number literals can be performed by surrounding them with parenthesis like `(12345).toString()` or by using two dots like `12345..toString()`
