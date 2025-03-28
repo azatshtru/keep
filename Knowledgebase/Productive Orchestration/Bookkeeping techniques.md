@@ -5,7 +5,7 @@ Zettlekasten
 Kanban
 Time Blocking
 [[Eat the frog]]
-Pomodoro Technique   
+[[Pomodoro Technique]]
 [[Eisenhower matrix]]
 [[OKRs (objectives and key results)]]
 Commitment Inventory   
