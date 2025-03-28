@@ -199,10 +199,23 @@ Since the company itself is not issuing new shares, the proceeds from an OFS go 
 # Developing a Point of View
 [[Economic events and their impact on the market]]
 
-Developing a point of view refers to developing a systematic approach for having an opinion and sense of direction on a stock or index. It is done through a combination of three methods.
+Developing a point of view refers to developing a systematic approach for having an opinion and sense of direction on a stock or index.
+
+A good point of view should have a directional view and should also include information such as..
+1. Price at which one should buy or sell stocks
+2. Expected Risk
+3. Expected reward
+4. Expected holding period
+
+It is done through a combination of three methods.
 1. Fundamental Analysis (FA)
 2. Technical Analysis (TA)
 3. Quantitative Analysis (QA)
+
+
+[[Fundamental Analysis vs Technical Analysis in Stock Markets]]
+[[Technical Analysis in Stock Markets]]
+[[Fundamental Analysis in Stock Markets]]
 
 An example of a trader's thought process when developing a POV according to different approaches follows...
 - **FA-based POV** - The company’s quarterly numbers look impressive. The company has reported a 25% top-line and 15% bottom-line growth. The company’s guidance also looks positive. With all the fundamental factors aligned, the stock looks bullish; hence the stock is a buy.
