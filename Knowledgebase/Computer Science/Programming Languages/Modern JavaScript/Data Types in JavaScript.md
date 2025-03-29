@@ -148,3 +148,60 @@ This method actually has two additional arguments specified in [the documentati
 contains other useful functions like `.trim()` and `.repeat(n)`
 Additionally, there are [[Regular Expressions in JavaScript]]
 Also, [[Unicode, surrogate pairs, diacritical marks and normalization, Oh my!]]
+# Array
+Array is a an object, suited to storing and managing ordered data items. It is declared as..
+```javascript
+let arr = [item1, item2...];
+```
+
+> There is another (**not recommended**) way to declare arrays of given size using `new Array(item1, item2, ...)`
+## Accessing elements of an array
+Elements can be accessed or modified using `arr[i]` syntax where `i` is the index of the element in the array.
+
+To get the element, an alternate method is the `.at(i)` function. `.at` allows for python-like negative indexing.
+## Array internal memory representation
+Arrays are stored in contiguous memory for faster access. However, if out of bounds index is accessed, then the memory representation decomposes to that of a regular object giving up all the benefits of contiguous memory location.
+## array to primitive conversion
+Arrays do not implement `Symbol.toPrimitive`, neither a viable `valueOf`, they implement only `toString` conversion. The `toString` conversion returns comma-separated list of elements of the array. for example,
+```javascript
+let arr = [1, 2, 3];
+alert( arr ); // 1,2,3
+alert( String(arr) === '1,2,3' ); // true
+```
+
+When performing operations with arrays, if the other operand is an object, then object operation rules are applied, otherwise if the other operand is a primitive, then primitive operation rules are applied.
+
+For example, When the binary plus `"+"` operator adds something to a string, it converts it to a string as well, therefore we get results like..
+```javascript
+alert( [] + 1 ); // "1"
+alert( [1] + 1 ); // "11"
+alert( [1,2] + 1 ); // "1,21"
+```
+This makes sense if we convert the arrays to their `toString` representation.
+```javascript
+alert( "" + 1 ); // "1"
+alert( "1" + 1 ); // "11"
+alert( "1,2" + 1 ); // "1,21"
+```
+## Length property of arrays
+The `length` property is the array length or, to be precise, its last numeric index plus one. It is auto-adjusted by array methods. If we shorten `length` manually, the array is truncated.
+
+If we set `array.length = 0`, then array is cleared.
+## `push` `pop` `shift` `unshift`
+We can use an array as a deque with the following operations,
+1. `push(...items)` adds `items` to the end.
+2. `pop()` removes the element from the end and returns it.
+3. `shift()` removes the element from the beginning and returns it.
+4. `unshift(...items)` adds `items` to the beginning.
+
+However, unlike a deque which supports all these operations in O(1), JavaScript still implements these on a regular array, therefore while push and pop are in O(1), shift and unshift suffer from O(n) time complexity.
+## Looping over array
+To loop over the elements of the array:
+- `for (let i=0; i<arr.length; i++)` – works fastest, old-browser-compatible.
+- `for (let item of arr)` – the modern syntax for items only,
+- `for (let i in arr)` – never use.
+## Comparing arrays
+Regular comparison operators like ` == `, `<`, `>` do not work with arrays because arrays are objects and object comparison rules are applied instead of comparing the array element-wise. Hence it is wise to loop over the arrays and compare manually element-wise instead.
+### comparing arrays with primitives
+the array is first converted to primitive using `toString`, we get results like..
+`alert(0 == []) // true`

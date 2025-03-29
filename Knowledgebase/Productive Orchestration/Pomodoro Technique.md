@@ -6,7 +6,6 @@ Break down larger tasks into smaller chunks and finish them in 25 minute interva
 It helps us do things that look too big to get started upon and also helps us track tasks while combating distractions all at once. It combats cognitive paralysis. [[Cognitive Biases]]
 
 Overtime you develop this smug satisfaction of staying productive and your brain develops nerve endings to filter out distractions and focus.
-
 # Tips to maximize productivity with pomodoro
 1. Plan overflow pomodoros. It is impossible to assess perfectly whether you can finish a task in one pomodoro, therefore instead of planning the workday with filled pomodoros, leave 2-3 pomodoros empty for tasks that might overflow from other pomodors that day.
 2. If you face distractions that require you to pause the current pomodoro, take a deep breath, and a 5 minute break, then start a new pomodoro.
