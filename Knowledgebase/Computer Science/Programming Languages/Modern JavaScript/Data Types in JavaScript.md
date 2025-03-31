@@ -147,7 +147,7 @@ This method actually has two additional arguments specified in [the documentati
 ## [String Library](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 contains other useful functions like `.trim()` and `.repeat(n)`
 Additionally, there are [[Regular Expressions in JavaScript]]
-Also, [[Unicode, surrogate pairs, diacritical marks and normalization, Oh my!]]
+Also, [[JavaScript - Unicode, surrogate pairs, diacritical marks, Oh my!]]
 # Array
 Array is a an object, suited to storing and managing ordered data items. It is declared as..
 ```javascript
