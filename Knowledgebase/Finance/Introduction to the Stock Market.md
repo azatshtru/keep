@@ -212,8 +212,8 @@ It is done through a combination of three methods.
 2. Technical Analysis (TA)
 3. Quantitative Analysis (QA)
 
-
 [[Fundamental Analysis vs Technical Analysis in Stock Markets]]
+[[Reasons and Assumptions for Technical Analysis in Stock Markets]]
 [[Technical Analysis in Stock Markets]]
 [[Fundamental Analysis in Stock Markets]]
 
