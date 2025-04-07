@@ -161,6 +161,19 @@ Elements can be accessed or modified using `arr[i]` syntax where `i` is the inde
 To get the element, an alternate method is the `.at(i)` function. `.at` allows for python-like negative indexing.
 ## Array internal memory representation
 Arrays are stored in contiguous memory for faster access. However, if out of bounds index is accessed, then the memory representation decomposes to that of a regular object giving up all the benefits of contiguous memory location.
+### array-like objects
+An object whose property keys are contiguous numbers and also contains a length property is called an array-like object because these objects are represented exactly like an array object just without the internal contiguous memory representation.
+
+For example,
+```javascript
+let arrayLike = {
+	0: "foo",
+	1: "bar",
+	2: "baz"
+	length: 3
+}
+```
+array-like objects can be enriched with Symbolic properties to give them other properties of an array. In a sense, array-like objects can be used as a limited faux array in many places where an array is required but can't be used directly.
 ## array to primitive conversion
 Arrays do not implement `Symbol.toPrimitive`, neither a viable `valueOf`, they implement only `toString` conversion. The `toString` conversion returns comma-separated list of elements of the array. for example,
 ```javascript
