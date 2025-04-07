@@ -195,13 +195,220 @@ We can use an array as a deque with the following operations,
 4. `unshift(...items)` adds `items` to the beginning.
 
 However, unlike a deque which supports all these operations in O(1), JavaScript still implements these on a regular array, therefore while push and pop are in O(1), shift and unshift suffer from O(n) time complexity.
+## `arr.splice()`
+> `arr.splice(start, deleteCount, elem1, elem2, elem3, ...)` is the Swiss army knife for array manipulation
+
+`arr.splice(start, deleteCount, elem1, elem2, ...)` takes two required arguments: `start` and `deleteCount` and deletes `deleteCount` amount of elements starting from the `start` index. If optionally, variadic arguments `elem1`, `elem2`, ... are specified then it also inserts the elements `elem1`, `elem2`, ... after the start position.
+
+If `deleteCount` is set to zero, then splice can be used as insertion.
+splicing also supports negative indexing for the `start` position.
+## slicing
+```javascript
+arr.slice(start, end)
+```
+It returns a new array copying to it all items from index `start` to `end` (not including `end`). Both `start` and `end` can be negative.
+If `end` argument is not specified, then it returns a subarray starting from `start` until the end of the array.
+If no arguments are specified, then the array is simply copied as is, this can be used to quickly create a copy of the array.
+## concatenation
+```javascript
+arr.concat(arg1, arg2...)
+```
+`arg1`, `arg2`, `...` can either be individual values or they can be arrays themselves. If any argument of `concat` is an array, then its elements are copied to `arr` instead.
+```javascript
+let arr = [1, 2];
+arr.concat(3, [4, 5], 6, 7) // arr becomes [1, 2, 3, 4, 5, 6, 7]
+```
+### `Symbol.isConcatSpreadable` and array-like objects
+An object can look like an array:
+```javascript
+let arrayLike = {
+  0: "something",
+  1: "else",
+  length: 2
+};
+```
+When concatenated to an array however, this object will be added as is. If we want this object to behave like an array during concatenation, i.e. its elements shall be concatenated instead of the whole array. Then we need to add a special property to this object, which is `Symbol.isConcatSpreadable`
+
+If an array-like object contains the `Symbol.isConcatSpreadable` property set to true, then its property-values are added to the array separately instead of the whole object.
+```javascript
+let arr = [1, 2];
+
+let arrayLike = {
+  0: "something",
+  1: "else",
+  [Symbol.isConcatSpreadable]: true,
+  length: 2
+};
+
+alert( arr.concat(arrayLike) ); // 1,2,something,else
+```
 ## Looping over array
 To loop over the elements of the array:
 - `for (let i=0; i<arr.length; i++)` – works fastest, old-browser-compatible.
 - `for (let item of arr)` – the modern syntax for items only,
 - `for (let i in arr)` – never use.
+## `arr.forEach`
+The `arr.forEach` method allows to run a function for every element of the array.
+For instance, alert each element of the array:
+```javascript
+["Bilbo", "Gandalf", "Nazgul"].forEach(alert);
+```
+Function expressions or Arrow functions are used to run more elaborate complex functions for each element.
+```javascript
+["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
+  alert(`${item} is at index ${index} in ${array}`);
+});
+```
+The return value of the function (if it returns any) is thrown away and ignored.
 ## Comparing arrays
 Regular comparison operators like ` == `, `<`, `>` do not work with arrays because arrays are objects and object comparison rules are applied instead of comparing the array element-wise. Hence it is wise to loop over the arrays and compare manually element-wise instead.
 ### comparing arrays with primitives
 the array is first converted to primitive using `toString`, we get results like..
 `alert(0 == []) // true`
+## Searching arrays
+### `arr.indexOf` and `arr.lastIndexOf`
+`arr.indexOf(item, from)` looks for `item` starting from index `from`, and returns the index where it was found, otherwise `-1`.
+`indexOf` uses strict equality ` === ` for comparison.
+`arr.lastIndexOf` is the same as `arr.indexOf` but searches from the end.
+### `arr.includes`
+If we only need to check that item is in the array without finding it, then we can use `arr.includes(item, from)` which looks for `item` starting from index `from`, returns `true` if found.
+
+> [!info] searching Nan
+> If an array contains `NaN`, then `indexOf` cannot find it because `NaN` doesn't equal itself. But `arr.includes` can be used to check if `NaN` is in the array because `arr.includes` was introduced later to JavaScript and contains modern NaN equality comparison algorithms.
+### `arr.find`, `arr.findIndex`, `arr.findLastIndex`
+`arr.find(func)` takes in a function `func`. `func` is called for each item one by one. `func` should return a boolean. `arr.find` returns the first element in the array that returns true when supplied to `func`. 
+
+When supplying each element to the given function, `find` also additionally supplies the element's index and a reference to the array to `func`, i.e. `func` can take upto three arguments if for some reason the index of the element and a reference to the array is required: `(item, index, array) => {}`
+
+`arr.findIndex(func)` returns the index of the first element for which `func` returns true. `arr.findLastIndex(func)` is same as `arr.findIndex` but returns the last element that returns true for the given `func`
+## `arr.sort(compareFunc)`
+sorts the array by comparing elements according to the given `compareFunc`. 
+
+`compareFunc` should take two elements, and return a negative number if the first is bigger than the second, otherwise it should return a positive number if second is bigger than the first, and if both are equal then `compareFunc` should return 0.
+
+If no `compareFunc` is provided, then each item of the array is converted to string and sorted lexicographically.
+
+-  common idiomatic syntax for sorting numbers: `arr.sort((a, b) => a - b)`
+-  common idiomatic syntax for sorting strings: `arr.sort((a, b) => a.localeCompare(b))` even though javascript automatically sorts lexicographically, this method is preferred because it covers discrepancies with Unicode.
+
+under the hood, sorting used optimized quicksort or Timsort.
+## `arr.reverse()`
+... reverses the order of elements of the array.
+## split and join
+`str.split(delim)` is a function of strings, not arrays. It splits the string into an array by the given delimiter `delim`.
+In the example below, we split by a comma followed by a space:
+```javascript
+let names = 'Bilbo, Gandalf, Nazgul';
+let arr = names.split(', '); // ['Bilbo', 'Gandalf', 'Nazgul']
+```
+If split is supplied with empty string `''` then it splits the string and returns an array containing each character as a separate element.
+
+split also has a optional second argument which takes in an integer. It is a limit on the array length. If it is provided, then the extra elements are ignored.
+```javascript
+let arr = 'Bilbo, Gandalf, Nazgul, Saruman'.split(', ', 2);
+alert(arr); // Bilbo, Gandalf
+```
+
+`arr.join(glue)` is a function of array, not string. It joins the array elements into a string using the `glue` provided.
+```javascript
+let arr = ['Bilbo', 'Gandalf', 'Nazgul'];
+let str = arr.join(';'); // glue the array into a string using ;
+alert( str ); // Bilbo;Gandalf;Nazgul
+```
+## map, filter, reduce
+`arr.map(func)` calls the function `func` for each element of the array and returns the array of results.
+```javascript
+let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
+alert(lengths); // 5,7,6
+```
+
+`arr.filter(func)` returns a subarray of `arr` which contains only the elements that return true when supplied to `func`
+
+`arr.reduce` accumulates a result over the array and returns it at the end.
+```javascript
+let value = arr.reduce(function(accumulator, item, index, array) {
+  // ...
+}, [initial]);
+```
+Arguments:
+- `accumulator` - is the result of the previous function call, equals `initial` the first time (if `initial` is provided).
+- `item` - is the current array item.
+- `index` - is its position.
+- `array` - is the array.
+
+```javascript
+let arr = [1, 2, 3, 4, 5];
+let result = arr.reduce((sum, current) => sum + current, 0);
+alert(result); // 15
+```
+
+If there’s no `initial` provided, then `reduce` takes the first element of the array as the initial value and starts the iteration from the 2nd element.
+## `thisArg` in array functions
+Almost all array methods that call functions - like `find`, `filter`, `map`, with a notable exception of `sort`, accept an optional additional parameter `thisArg`.
+```javascript
+arr.find(func, thisArg);
+arr.filter(func, thisArg);
+arr.map(func, thisArg);
+// thisArg is the optional last argument
+```
+### what does thisArg do?
+```javascript
+let army = {
+  minAge: 18,
+  maxAge: 27,
+  canJoin(user) {
+    return user.age >= this.minAge && user.age < this.maxAge;
+  }
+};
+
+let users = [
+  {age: 16},
+  {age: 20},
+  {age: 23},
+  {age: 30}
+];
+
+// find users, for who army.canJoin returns true
+let soldiers = users.filter(army.canJoin, army);
+
+alert(soldiers.length); // 2
+alert(soldiers[0].age); // 20
+alert(soldiers[1].age); // 23
+```
+
+If in the example above, if we used `users.filter(army.canJoin)` instead of `users.filter(army.canJoin, army);`, then `army.canJoin` would be called as a standalone function, with `this=undefined`, thus leading to an instant error.
+
+A call to `users.filter(army.canJoin, army)` can be replaced with `users.filter(user => army.canJoin(user))`, that does the same.
+## `Array.isArray`
+Since arrays are based on objects, `typeof` does not help to distinguish a plain object from an array.
+```javascript
+alert(typeof {}); // object
+alert(typeof []); // object
+```
+To check if some variable is an array, `typeof` won't work. Instead, `Array.isArray(value)` is used.
+```javascript
+alert(Array.isArray({})); // false
+alert(Array.isArray([])); // true
+```
+## some and every
+`arr.some(fn)`
+The function `fn` is called on each element of the array similar to `map`. If any of the results are `true`, `some` returns `true`, otherwise `false`.
+
+`arr.every(fn)`
+The function `fn` is called on each element of the array similar to `map`. If and only if all results are `true`, `every` returns `true`, otherwise `false`.
+
+We can use `every` to compare arrays:
+```javascript
+function arraysEqual(arr1, arr2) {
+  return arr1.length === arr2.length && arr1.every((value, index) => value === arr2[index]);
+}
+
+alert( arraysEqual([1, 2], [1, 2])); // true
+```
+## [Arrays Manual on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+### arr.fill(value, start, end)
+... fills the array with repeating `value` from index `start` to `end`.
+### arr.copyWithin(target, start, end) 
+... copies its elements from position `start` till position `end` into _itself_, at position `target` (overwrites existing).
+### [arr.flat(depth)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)/[arr.flatMap(fn)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap)
+... are used to create a new flat array from a multidimensional array.
