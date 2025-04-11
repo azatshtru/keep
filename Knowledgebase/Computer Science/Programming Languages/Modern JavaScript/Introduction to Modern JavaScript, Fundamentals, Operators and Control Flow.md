@@ -179,12 +179,10 @@ Nullish coalescing operator has same precedence than logical or, but it cannot b
 
 ```let x = 1 && 2 ?? 3; // Syntax error```
 ```let x = (1 && 2) ?? 3; // Works```
-
 # Loops
 JavaScript supports three types of loops: `for`, `while`, and `do..while`.
 Loops can be labeled, for example `someLoop: for(let i = 0; i < n; i++)`
 Usual `break` and `continue` directives exist, the directives can be paired with loop labels to break the loop under that label. 
-
 # Functions
 A function declaration looks like this:
 ```javascript

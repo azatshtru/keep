@@ -425,3 +425,146 @@ alert( arraysEqual([1, 2], [1, 2])); // true
 ... copies its elements from position `start` till position `end` into _itself_, at position `target` (overwrites existing).
 ### [arr.flat(depth)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)/[arr.flatMap(fn)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap)
 ... are used to create a new flat array from a multidimensional array.
+# Iterators and Iterables
+## the iterator protocol
+Any object that implements a `next()` method such that `next()` returns an object of the form `{value: any|undefined, done: Boolean|false}` follows the iterator protocol and is called an iterator.
+## the iterable protocol
+Any object that implements `[Symbol.iterator]()` method such that `[Symbol.iterator]()` returns an iterator object follows the iterable protocol and is naturally called an iterable.
+## example: range iterator
+```javascript
+let range = {
+  from: 1,
+  to: 5
+};
+
+range[Symbol.iterator] = function() {
+  return {
+    current: this.from,
+    last: this.to,
+    next() {
+      if (this.current <= this.last) {
+        return { done: false, value: this.current++ };
+      } else {
+        return { done: true };
+      }
+    }
+  };
+};
+```
+In this example, `range` is an iterable because it implements `[Symbol.iterator]` which returns an iterator object.
+## explicit usage of iterators/iterables
+the code snippet below uses the iterable declared in the example above.
+```javascript
+// calling [Symbol.iterator] on the iterable object to get handle of the iterator it returns.
+let iterator = range[Symbol.iterator]();
+while(true) {
+	let result = iterator.next();
+	if(result.done) break;
+	alert(result.value); // 1, 2, 3, 4, 5
+}
+```
+## iterators/iterables and for..of
+Making an object follow the iterable protocol allows it to be used in for..of loops.
+
+When for..of is called on any object, JavaScript first looks for `[Symbol.iterator]()` method on the said object. If not found, JavaScript throws an error telling us that the object is not iterable. Howerver if `[Symbol.iterator]` is found, JavaScript calls the `[Symbol.iterator]()` method and internally gets a handle of the iterator object it returns.
+
+After that, JavaScript keeps calling the `next()` function repeatedly on the iterator object and using the returned object's `value` property until the `next()` method returns `{done: true}` which tells JavaScript to terminate the for..of loop.
+```javascript
+for(let num of range) {
+	alert(num); // 1, 2, 3, 4, 5
+}
+```
+## can and shall an object be both an iterable and an iterator?
+Yes, it can.
+BUT you shouldn't do it.
+For example, we can rewrite the range iterator example as follows:
+```javascript
+let range = {
+  from: 1,
+  to: 5,
+
+  [Symbol.iterator]() {
+    this.current = this.from;
+    return this;
+  },
+
+  next() {
+    if (this.current <= this.to) {
+      return { done: false, value: this.current++ };
+    } else {
+      return { done: true };
+    }
+  }
+};
+```
+Here the `range` object is both an iterator and an iterable because it implements both `next()` and `[Symbol.iterator]()` such that `[Symbol.iterator]()` returns the object itself.
+
+Now, whenever `next()` is called (explicitly or in a for..of loop), the range object changes its internal state to proceed forward in the iteration. This can cause problems when there are more than one things trying to iterate over `range` simultaneously.
+```javascript
+// calling [Symbol.iterator] on the iterable object to get handle of the iterator it returns.
+let iterator1 = range[Symbol.iterator]();
+let iterator2 = range[Symbol.iterator]();
+alert( iterator1.next().value ); // 1
+alert( iterator2.next().value ); // 2, not 1 even though iterator2 has never been iterated before.
+alert( iterator1.next().value ); // 3, not 2, even though iterator1 has been iterated only once before, not twice.
+alert( iterator2.next().value ); // 4, not 2, even though iterator2 has only been iterated once before.
+alert( iterator2.next().value ); // 5, I think I got the point across.
+```
+
+The takeaway is to always loose-couple your iterators and iterables. An iterable should always be an object that allows iteration using its values without changing its internal state, while an iterator object should be the driver of the iteration over the said iterable object that spawns it.
+## iterators as consumables
+If a sequence of values will only be used for iteration without needing to access individual values in the sequence randomly, an iterable is a better way to store the sequence simply because each value is calculated only when needed and no additional space is used. A million numbers of a range can be iterated upon while only storing two numbers, the start and end of the range. If instead we use an array only for iteration purposes, we would need to store a large amount of values.
+
+Iterators are consumables, you can't go back to the value in the sequence before, you can only consume further, until there is no more sequence to consume.
+
+Iterators can, in fact, be infinite if they never implement a condition to return `{done: true}`, for example, an iterator that returns an infinite sequence random values from a pseudo-random generator function.
+## strings and arrays are iterables
+...because they implement `[Symbol.iterator]()` method.
+### `Array.from`
+Array.from is used to convert an iterator's iteration sequence into an array. All the values obtained in order by iterating over the iterator are put into an array.
+```javascript
+let arr = Array.from(range); // [1, 2, 3, 4, 5]
+```
+
+Array.from optionally takes a `mapFn` argument, which is a first-order function that can be used to map the values of the iteration onto other values before putting them in the array.
+
+Array.from also works with array-like objects.
+```javascript
+let arrayLike = {
+  0: "Hello",
+  1: "World",
+  length: 2
+};
+
+let arr = Array.from(arrayLike);
+alert(arr); // Hello,World
+```
+
+If we look inside the specification – we’ll see that most built-in methods assume that they work with iterables or array-likes instead of "real" arrays, because that’s more abstract, which can be converted to arrays when required using Array.from
+### string iterators are surrogate-pair aware
+the `next()` function of string iterator handles [[JavaScript - Unicode, surrogate pairs, diacritical marks, Oh my!#Surrogate Pairs|surrogate pairs]] perfectly. Therefore, by iterating over a string explicitly, or using a for..of loop we do not need to worry about possibly catching either half of a surrogate pair.
+
+`Array.from` can be used on strings because strings are also iterables and Array.from can convert any iterable into an array.
+```javascript
+let str = '𝒳😂';
+let chars = Array.from(str);
+
+alert(chars[0]); // 𝒳
+alert(chars[1]); // 😂
+alert(chars.length); // 2
+```
+
+`str.split` and `str.slice` struggle when string has surrogate pairs as discussed in [[JavaScript - Unicode, surrogate pairs, diacritical marks, Oh my!]], but if we convert the string into an array, then we can make a surrogate-aware slice.
+
+```javascript
+function slice(str, start, end) {
+  return Array.from(str).slice(start, end).join('');
+}
+
+let str = '𝒳😂𩷶';
+
+alert( slice(str, 1, 3) ); // 😂𩷶
+
+// the native method does not support surrogate pairs
+alert( str.slice(1, 3) ); // garbage (two pieces from different surrogate pairs)
+```
