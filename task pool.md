@@ -13,6 +13,7 @@ CLRS / algorepo
    
 Learn investing   
 IITG   
+Contribute to open source
 
 vim marks
 devcontainers   
@@ -33,5 +34,4 @@ crafting interpreters
 Linear algebra done right   
 Cryptography (The book: modern cryptography by katz)   
 Art of Assembly\*   
-Linux kernel   
-   
+Linux kernel

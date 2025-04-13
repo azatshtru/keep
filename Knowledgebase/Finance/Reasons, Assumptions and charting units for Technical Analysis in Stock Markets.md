@@ -66,7 +66,22 @@ If it is a positive period, the lower end of the rectangular body corresponds to
 
 Based on the nature of the day, positive or negative, the upper and lower ends of the rectangular body represent different things. To distinguish, the rectangular body is colored a "hot color" like red when the candlestick is over a negative period and it is colored a "cool color" like blue or green when the candlestick is over a positive period.
 
+The positive day candlesticks are called bullish candles, the negative day candlesticks are called bearish candles.
+
 A typical candlestick chart looks like this:
 ![sample candlestick chart](https://zerodha.com/varsity/wp-content/uploads/2014/09/M2-Ch3-Chart3.jpg)
 
-A candlestick chart is preferred by traders because it allows for inference of candlestick patterns in technical analysis.
+A candlestick chart is preferred by traders because it allows for inference of candlestick patterns in technical analysis. Also, candlestick patterns come with an inbuilt risk management mechanism.
+
+[[List of Candlestick Patterns in Technical Analysis of Stock Market]]
+# guidelines specific to candlesticks patterns
+these assumptions are more guidelines than rules, many patterns may violate them in favor of some other specific assumption.
+1. Buy strength and sell weakness - Strength is represented by a bullish candle and weakness by a bearish (red) candle. Hence whenever you are buying ensure, it is a blue candle day and whenever you are selling, ensure it’s a red candle day.
+2. Be flexible with patterns (quantify and verify) - While the textbook definition of a pattern could state certain criteria, there could be minor variations to the pattern owing to market conditions. So one needs to be a bit flexible. However, one needs to be flexible within limits, and hence it is always required to quantify the flexibility.
+3. Look for a prior trend - If you are looking at a bullish pattern, the prior trend should be bearish, and likewise, if you are looking for a bearish pattern, the prior trend should be bullish.
+## basic psychological management when using candlesticks
+No candlestick pattern can always predict the future with certainity. However, in the case when something goes wrong, it is required to not let emotions take over, one should book a loss with the inbuilt risk management mechanism and move forward.
+
+The risk management mechanism of each candlestick can sometimes also cut your profits. For example, you might put a stoploss according to a candlestick pattern, and that stoploss might get triggered, but then the stock mysteriously starts going, up, in this case, you have booked a loss instead of a profit. But again, this is part of the game and one should move forward instead of making hasty decisions fueled by emotions of loss of monetary value.
+
+Always remember: Once a trade is initiated, you should hold on to it until either the target is hit or the stoploss is breached. If you attempt to do something else before any one of these event triggers, your trade could most likely go bust. So staying on the course of the plan is extremely crucial.

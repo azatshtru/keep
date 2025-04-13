@@ -29,7 +29,7 @@ There are two sources of income from this:
 1. Rental income
 2. Capital appreciation of the investment amount, i.e. selling the land at a higher price than it was bought in.
 
-The transaction process of buying and selling real estate can be quite complex, involving legal verification of documents. But.. the returns are much higher.
+The transaction process of buying and selling real estate can be quite complex, involving legal verification of documents. But the returns are much higher.
 ## Bullion
 Gold and Silver provide returns of 5-8%
 There are several ways to invest in Gold, electronic or real:
