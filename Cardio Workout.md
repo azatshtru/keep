@@ -3,7 +3,7 @@ It is not always possible to have a fit it or an Apple Watch or a BPM monitor, b
 > Always measure your workouts
 
 1. Lightly press your index, second and third fingertips on the palm side of the opposite wrist below the base of the thumb.
-2. Count the beats for 10 seconds, then multiply by six to get your heart rate in beats per minute.
+2. Count the beats for 15 seconds, then multiply by four to get your heart rate in beats per minute.
 # target heart rate
 target maximum heart rate is calculated by subtracting your age from 220
 
