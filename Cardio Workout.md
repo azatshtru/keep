@@ -15,4 +15,5 @@ slowly increase cardio activity until you reach 60% to 80% of the target maximum
 
 Once you reach the range, maintain the heart rate for as long as possible, a good ideal range is 20-30 minutes each day, but if you can't then less is fine when you're starting out.
 
+If running on the same speed gets boring and monotonous, then switch to a varying high and low intensity workout
 
