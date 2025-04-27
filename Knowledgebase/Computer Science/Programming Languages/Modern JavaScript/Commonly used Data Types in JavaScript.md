@@ -662,3 +662,5 @@ set.forEach((value, valueAgain, set) => {
 The funny, and quite frankly insane thing here is that the callback function passed in `forEach` has 3 arguments: a `value`, then _the same value_ `valueAgain`, and then the target object. The same value appears in the arguments twice.
 
 That’s for compatibility with `Map` where the callback passed `forEach` has three arguments. Looks a bit strange, for sure. But this may help to replace `Map` with `Set` in certain cases with ease, and vice versa.
+
+There are also WeakMap and WeakSet as described at the end in [[Weak references and Finalization registry in JavaScript]].
