@@ -5,7 +5,7 @@ Some patterns can be identified by just observing a single candlestick. These ar
     2. Bearish Marubozu
 2. [[Spinning tops and Doji candlestick patterns|Doji]]
 3. [[Spinning tops and Doji candlestick patterns|Spinning Tops]]
-4. Paper umbrella
+4. [[Paper Umbrella]]
     1. Hammer
     2. Hanging man
 5. Shooting star
