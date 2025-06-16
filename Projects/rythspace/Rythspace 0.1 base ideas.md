@@ -1,5 +1,5 @@
 ## Design
-- ryth will use FiraCode nerd font
+- ryth will use FiraCode nerd font, and Balsamiq Sans for a more natural writing feel.
 
 # Rythspace 0.1 base ideas
 ### Notes and links   
