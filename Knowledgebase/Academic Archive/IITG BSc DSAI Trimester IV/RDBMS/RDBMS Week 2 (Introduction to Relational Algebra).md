@@ -4,7 +4,7 @@ trimester_week: 2
 ---
 
 ## Relational Query Language   
-A query language is used to request information from a database.   
+A qwuery language is used to request information from a database.   
 There are two types of query languages: procedural and non-procedural (declarative).   
 In procedural query language, the user provides the procedure and instructions to perform a series of operations on the database to calculate the desired result. example: **relational algebra, PL/SQL**   
 In non-procedural (declarative) language, the user describes the desired information without giving specific procedure for obtaining the information. example: **relational calculus, SQL**.   

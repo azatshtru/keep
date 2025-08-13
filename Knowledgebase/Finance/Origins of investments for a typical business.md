@@ -2,7 +2,7 @@
 Businesses need initial funding to setup. This initial funding is provided by **Angel Investors**. The funding is called a **Seed Fund**. Seed funds can come from friends, family or other investors who think your business idea is worthwhile.
 
 Valuation of a company is measured by the amount of cash they have.
-The initial valuation of the company is equal to the seed fund.
+q initial valuation of the company is equal to the seed fund.
 ## Face Value of shares
 In return of the Seed Fund, the Angel Investors get the shares of the company, which entitles them a part ownership of the company. To issue shares, the company assumes each share is worth some $x$, this initial assumption is called **Face Value** of the share, if the seed fund in some $n$, then the amount of shares will be $n/x$.
 
