@@ -1,4 +1,5 @@
 #fleeting-ideas garden - an app to build url trees when studying to avoid getting lost in the sea of recursive urls when studying online technical documentations, books or other things, with spaced repetition built in.
+#fleeting-ideas an AI based code explorer, where I can just send the GitHub repo link, and then ask questions about things
 #fleeting-ideas An asynchronous IO library in C named AxIOm
 #fleeting-ideas A command line economy RPG multiplayer game
 #fleeting-ideas Text ascii art for larger headings in terminal based markdown editor
