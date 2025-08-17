@@ -1,4 +1,4 @@
-The GNU Debugger used to debug your C code.
+The GNU Debugger is used to debug your C code.
 ### Stepping over vs stepping into   
 Stepping over refers to going over the lines of code. If the debugger is currently on top of a function call, stepping over at that moment will run the function and the debugger will move on to analyze the next line.   
 Stepping into refers to looking closely at a function call and looking at the instructions inside that function. If the debugger is currently on top of a function call, stepping into will make the code jump to the function and debugger will start analyzing the lines and instructions inside that function.   
